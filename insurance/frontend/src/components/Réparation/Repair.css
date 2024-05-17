@@ -1,0 +1,10 @@
+#messi {
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.buttons-container1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

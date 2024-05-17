@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.title {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+#section {
+    background-color: #188EBB ;
+}
+
+.description {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 120px;
+}
+
+.sous {
+    background-color: white;
+    display: flex; 
+    justify-content: center; 
+    margin-left: 400px;
+    margin-right: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -80px;
+
+}
+
+#dec{
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    color: #188EBB;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.carre1 {
+    width: 150px;
+    height: 150px; 
+    box-shadow: 0 6px 6px rgba(0,0,0, .5);
+    border-radius: 20px;
+    margin-left: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .carre2 {
+    width: 200px;
+    height: 320px; 
+    box-shadow: 0 6px 6px rgba(0,0,0, .5);
+    border-radius: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .carre3{
+    width: 150px;
+    height: 150px; 
+    box-shadow: 0 6px 6px rgba(0,0,0, .5);
+    border-radius: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+
+  .carreau {
+    display: inline-flex;
+  }
+
+  .carre4{
+    width: 150px;
+    height: 150px; 
+    box-shadow: 0 6px 6px rgba(0,0,0, .5);
+    border-radius: 20px;
+    margin-left: 470px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .carre5{
+    width: 150px;
+    height: 150px; 
+    box-shadow: 0 6px 6px rgba(0,0,0, .5);
+    border-radius: 20px;
+    margin-left: 860px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+.vector1{
+  transition: 1s;
+}
+
+.vector1:hover {
+  scale: 2;
+}
+
+.vector{
+  transition: 1s;
+}
+
+.vector:hover {
+  scale: 2;
+}
+
+.casque{
+  transition: 1s;
+}
+
+.casque:hover {
+  scale: 2;
+}
+
+.Oip{
+  transition: 1s;
+}
+
+.Oip:hover {
+  scale: 2;
+}
+
+.sch{
+  transition: 1s;
+}
+
+.sch:hover {
+  scale: 2;
+}
+
+.card{
+  height: 300px;
+  background-color: #188EBB;
+}

@@ -1,0 +1,115 @@
+#mlk{
+  margin-top: -70px;
+  margin-right: 60px;
+}
+
+#meet {
+  margin-right: 60px;
+}
+
+.footer { background: #ffffff; 
+  color: rgb(6, 6, 6); 
+  padding: 1px; 
+  border-top: 2px solid #f8f2f2;
+  display:flex;
+  flex-direction: column;
+}
+
+.footer .links { ul { list-style-type: none; margin: 0; padding: 0; }
+
+li a { color: rgb(5, 5, 5); transition: color 0.2s; text-decoration: none; }
+
+li a:hover { color: #188EBB; } }
+
+.footer .about-company { i { font-size: 25px; }
+
+a { color: rgb(6, 6, 6); transition: color 0.2s; text-decoration: none; }
+
+a:hover { color:  #188EBB; } }
+
+
+.footer .copyright { p { border-top: 2px solid  #188EBB; padding-top: 0.5px;text-align: center;width: 1300px;margin-left: 150px; } }
+
+.im img {
+  margin-left: 60px;
+}
+
+
+.cn {
+  position: relative;
+  right:80px;
+  bottom:0px;
+  display: flex;
+  flex-direction: column;
+}
+.l1{
+  position: relative;
+  left:250px;
+}
+.l3{
+
+  position: relative;
+  left:140px;
+  padding-left:100px;
+}
+.l2{
+  position: relative;
+  left:100px;
+  right:100px;
+  padding-left: 50px;
+}
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn26 {
+  background-image: linear-gradient(
+    to right,
+    #188EBB,
+    #2b5394,
+    #23a1cb,
+    #2b5394
+  );
+  box-shadow: 0 4px 15px 0      #188EBB;
+  margin-top: 20px;
+}
+.h{
+  text-align: center;
+  padding-right: 50px;
+}
+.contact-info {
+  position:relative;
+  right:30px;
+}
+
+
+
+#h44{
+  text-decoration: none;
+}

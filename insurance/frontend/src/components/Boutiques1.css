@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#titre{
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;    font-weight: 200;
+    font-style: normal;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.carreau3{
+    margin-top: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.care1{
+    width: 350px;
+    height: 450px; 
+    background-color: rgba(113, 196, 239, 0.5);  
+    box-shadow: 0 6px 6px rgba(0,102,140, .8);
+    border-radius: 40px;
+    margin-left: 75px;
+}
+
+.care2{
+    width: 350px;
+    height: 450px; 
+    background-color: rgba(113, 196, 239, 0.5);  
+    box-shadow: 0 6px 6px rgba(0,102,140, .8);
+    border-radius: 40px;
+}
+
+.care3{
+    width: 350px;
+    height: 450px; 
+    background-color: rgba(113, 196, 239, 0.5);  
+    box-shadow: 0 6px 6px rgba(0,102,140, .8);
+    border-radius: 40px;
+    margin-right: 75px;
+
+}
+
+
+h4{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px ;
+}
+
+
+.container {
+    display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; 
+  margin-top: -20px;
+    
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Basic", sans-serif;
+    font-style: normal;
+
+}
+
+.image1 {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;
+  transition: 1s;
+}
+
+.image1:hover {
+    scale: 1.5;
+  }
+.image:hover {
+    rotate: 360deg;
+  }
+
+.image2 {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin-top: 50px;
+    transition: 1s;
+  }
+
+  .image2:hover {
+    scale: 1.5;
+  }
+
+  .image3:hover {
+    scale: 1.5;
+  }
+
+.rectangle {
+    height: 50px;
+    width: 50px;
+    background-color: #292D32;
+    border-radius: 100%;
+
+}
+
+ArrowForwardIcon {
+    background-color: white;
+}
+
+.p1 {
+    margin-top: -20px;
+}
+
+.p2 {
+  margin-top: 35px;
+}
+
+
+.image3 {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    margin-top: 30px;
+    transition: 1s;
+
+}
+
+.p3 {
+    margin-top: 10px;
+}
+
+.icon {
+    color: white;
+    margin-top: 2px;
+}
+
+.boutton {
+    display: flex;
+    justify-content: end; /* Centrer horizontalement */
+    align-items: end;
+    margin-right: 15px;
+}

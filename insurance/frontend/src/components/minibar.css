@@ -1,0 +1,24 @@
+.minibar {
+    background-color: #188EBB;
+    display: inline-flex;
+    position: relative;
+    padding-top: 10px;
+    width:100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.material-symbols-outlined{
+    margin-left: 150px;
+}
+
+.element {
+    margin-left: 8px;
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+#language {
+    font-size: 15px;
+    margin-left: 600px;
+    padding: 2px;
+}

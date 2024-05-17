@@ -1,0 +1,72 @@
+#k{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.connexion2{
+    height: 700px;
+    width: 1000px;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px rgba(0,102,140, .9);
+    margin-top: 40px;
+    padding: 60px;
+    background-image: url('../assets/logoopac.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    display: inline-flex;
+    margin-bottom: 150px;
+}
+
+.toogle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+.identification {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+#rb1{
+    margin-left: 10px;
+    margin-right: 20px;
+    color: black;
+}
+
+#rb2{
+    margin-left: 10px;
+    margin-right: 20px;
+    color: black;
+}
+
+#form{
+margin-left: 30px;
+margin-top: -20px;}
+
+.cb1{
+    margin-top: 30px;
+}
+
+.ft1{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#password {
+    background-color: rgba(196, 196, 196, 0.8); 
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 45px;
+    width : 390px;
+    border: 0px;
+    padding: 10px;
+    
+}
+

@@ -1,0 +1,146 @@
+.div2 {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    box-shadow: 0 4px 4px rgba(26, 134, 189, 0.3);
+    background-color: rgba(113, 196, 239, 0.5); 
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Basic&family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+.title3{
+    display: flex;
+    justify-content: center;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-left: 40px;
+}
+
+
+.rec2 {
+    display: inline-flex;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+.button {
+    box-shadow: 0 4px 4px rgba(26, 134, 189, 0.6);
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    width: 270px;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  
+.button:hover {
+    background-color: #133B58;
+    color: white;
+}
+
+.custom-for {
+    margin-left: 150px;
+}
+
+.d1 {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+#liy{
+    text-decoration: none;
+}
+
+#btn4{
+    background-color: red;
+    color: white;
+    border : 0px;
+    height: 50px;
+    width : 200px;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+#d7 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.petit {
+    background-color: grey;
+    height: 50px;
+    width: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -50px;
+    margin-left: 301px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn5 {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: gray;
+    color: white;
+    border: 0px solid black;
+    font-family: "poppins";
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width:fit-content;
+}
+
+#btn5{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+    margin-right: 210px;
+    margin-top: -70px;
+
+}
+
+.btn5:hover{
+    background-color: rgb(128, 128, 128, 0.8);
+}
+
+#gd {
+    margin-top: 40px;
+    margin-left: -5px;
+    width: 180px;
+}
+
+#rec3 {
+    margin-top: 30px;
+}
+
+
+#rec2{
+    
+
+}

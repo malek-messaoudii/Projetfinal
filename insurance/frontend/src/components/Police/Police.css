@@ -1,0 +1,47 @@
+.container {
+    display: flex; /* Affichage en mode flex */
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  
+  /* Styles pour chaque réclamation */
+  .claim-container {
+    background-color: #f4f4f4; /* Couleur de fond */
+    border: 1px solid #ddd; /* Bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    padding: 15px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Marge en bas */
+    width: calc(33.33% - 20px); /* Largeur égale à 1/3 de la largeur totale, moins la marge */
+    margin-right: 20px; /* Marge à droite */
+  }
+  
+  /* Styles pour la description de la réclamation */
+  .claim-description {
+    font-weight: bold; /* Texte en gras */
+    margin-bottom: 10px; /* Marge en bas */
+  }
+  
+  /* Styles pour les détails de la réclamation */
+  .claim-details {
+    display: flex; /* Affichage en mode flex */
+    justify-content: space-between; /* Alignement des éléments sur les côtés */
+  }
+  
+  .claim-details button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 15px; 
+    cursor: pointer; 
+  }
+  
+  .claim-details button:hover {
+    background-color: #0056b3; 
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  #tut{
+    font-family: "Poppins", sans-serif; 
+    margin-bottom: 20px;  
+  }

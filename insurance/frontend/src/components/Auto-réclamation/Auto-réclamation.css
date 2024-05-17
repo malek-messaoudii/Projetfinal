@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Basic&family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+.title4{
+    display: flex;
+    justify-content: start;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.dev {
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px rgba(26, 134, 189, 0.8);
+    margin-left: 40px;
+    margin-top: 60px;
+
+
+}
+
+.dev1 {
+    height: 60px;
+    width: 340px;
+    border-radius: 40px;
+    background-color: #2980BE;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+
+}
+
+
+.rectangle1 {
+    height: 45px;
+    width: 45px;
+    background-color: #ffffff;
+    border-radius: 100%;
+
+
+
+}
+
+ArrowForwardIcon {
+    background-color: rgb(0, 0, 0);
+}
+
+#p5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.dev2 {
+    height: 60px;
+    width: 340px;
+    border-radius: 40px;
+    background-color: #2980BE;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+
+}

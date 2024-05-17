@@ -1,0 +1,11 @@
+#cnx{
+    height: 850px;
+    margin-bottom: 170px;
+}
+
+.btr  {
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}

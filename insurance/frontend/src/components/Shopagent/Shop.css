@@ -1,0 +1,22 @@
+
+
+.tabtab{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#btn1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn1 {
+    height: 50px;
+    border-radius: 20px;
+    background-color: #00668C;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+}

@@ -1,0 +1,65 @@
+#carer1{
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.8);
+  width: 800px;
+  margin-top: 60px;
+  border-radius: 50px;
+}
+
+
+#sec4{
+  display: flex;
+  justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#sec4 input[type="text"],
+#sec4 input[type="tel"],
+#sec4 input[type="email"],
+#sec4 input[type="date"],
+#sec4 textarea {
+  background-color: rgba(113, 196, 239, 0.5); /* Couleur avec opacité */
+  color: #333; /* Couleur de texte */
+  border: 1px solid #ccc; /* Bordure grise */
+  padding: 8px; /* Espacement intérieur */
+  font-family: Arial, sans-serif; /* Police */
+}
+
+/* Modifier la police des labels */
+#sec4 label {
+  font-family: "Poppins", sans-serif;
+}
+
+#vol {
+  margin-left: 30px;
+  height: 15px;
+  width: 15px;
+}
+
+#startDate {
+  width: 500px;
+}
+#date {
+  width: 500px;
+}
+
+
+#bt111{
+  margin-left: 620px;
+}
+
+#contrat{
+  width: 500px;
+  height: 40px;
+  background-color: rgba(113, 196, 239, 0.5); /* Couleur avec opacité */
+  border: 0px;
+}
+
+#contractTerms{
+  height: 100px;
+}
+
+
+.print-btn{
+  top: 100px;
+}

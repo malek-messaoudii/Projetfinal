@@ -1,0 +1,741 @@
+
+.cm {
+  margin-left: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alignement vertical des enfants */
+}
+
+.combined-shape {
+  position: relative;
+  width: 800px; /* Largeur du rectangle */
+  height: 200px; /* Hauteur du rectangle */
+  background-color: #F5F8FF; /* Couleur du rectangle */
+  display: flex;
+  justify-content: space-between; /* Répartit l'espace entre les enfants */
+  align-items: center; /* Centre les enfants verticalement */
+}
+
+.combined-shape::after {
+  content: '';
+  position: absolute;
+  right: -100px; /* Positionne le centre du cercle juste à la bordure droite du rectangle */
+  width: 200px; /* Diamètre du cercle */
+  height: 200px; /* Diamètre du cercle */
+  background-color: #F5F8FF; /* Couleur du cercle */
+  border-radius: 50%;
+  z-index: -1; /* Assure que le cercle ne passe pas devant l'élément img */
+}
+
+.ims{
+  height: 70%; /* Ajustez la hauteur de l'image pour qu'elle corresponde à celle du .combined-shape */
+  width: auto; /* Garde les proportions de l'image */
+  order: 1; /* Place l'image à la droite de #info */
+  position: relative;
+  left:50px;
+}
+
+.ims2{
+  
+      height: 70%; /* Hauteur ajustée pour correspondre à celle du .combined-shape2 */
+      width: auto; /* Maintient les proportions de l'image */
+      position: relative;
+      right:50px;
+ 
+}
+
+.cm2{
+  margin-left: 430px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alignement vertical des enfants */
+}
+
+.combined-shape2 {
+  position: relative;
+  width: 800px; /* Nouvelle largeur encore plus grande du rectangle */
+  height: 200px; /* Nouvelle hauteur encore plus grande du rectangle */
+  background-color: #F7F7F7; /* Couleur du rectangle */
+  display: flex;
+  justify-content: space-between; /* Répartit l'espace entre les enfants */
+  align-items: center; /* Centre les enfants verticalement */
+}
+
+.combined-shape2::after {
+  content: '';
+  position: absolute;
+  left: -100px; /* Ajustement du positionnement pour une taille de cercle encore plus grande */
+  width: 200px; /* Nouveau diamètre encore plus grand du cercle */
+  height: 200px; /* Nouveau diamètre encore plus grand du cercle */
+  background-color: #F7F7F7; /* Couleur du cercle */
+  border-radius: 50%;
+  z-index: -1; /* Assure que le cercle ne passe pas devant l'élément img */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#titreservice{
+margin-bottom: 50px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color:#188EBB;
+}
+#soustitre{ display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+  font-size: 20px;
+
+ 
+
+}
+
+.card {
+    margin-left: 140px ;
+    text-align: center;
+
+}
+
+.card>h3 {
+   margin-left: -30px;
+}
+#titregaranties{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color:#188EBB;
+  right: 105px;
+ position: relative;
+ bottom:40px;
+ 
+}
+.row1 {
+display: inline-flex;}
+
+#titrepourquoinous{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color:#FFFFFF;
+  position: relative;
+  bottom:40px;
+}
+#desc2{
+  padding-right: 50px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+#descr{
+  font-family: "Knewave", system-ui;
+}
+#desc1{
+  padding-left: 100px;
+  font-family: "Knewave", system-ui;
+  
+
+}
+
+
+#descn{
+  padding-left: 100px;
+  font-family: "Poppins", sans-serif;
+
+
+}
+
+.animated-button {
+ 
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 28px;
+  border: 4px solid;
+  border-color: #2980BE ;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 400;
+  color: #0048FF;
+  box-shadow: 0 0 0 2   #2980BE;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #2980BE;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2980BE;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: "Poppins";
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #ffffff;
+  border-radius: 12px;
+
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+  color: #ffffff;
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px  #2980BE;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.animated-button1 {
+ 
+  position: relative;
+  left:100px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 28px;
+  border: 4px solid;
+  border-color: #2980BE ;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 400;
+  color: #0048FF;
+  box-shadow: 0 0 0 2   #2980BE;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button1 svg {
+  position: absolute;
+  width: 24px;
+  fill: #2980BE;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button1 .arr-1 {
+  right: 16px;
+}
+
+.animated-button1 .arr-2 {
+  left: -25%;
+}
+
+.animated-button1 .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2980BE;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button1 .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: "Poppins";
+
+}
+
+.animated-button1:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: black;
+  border-radius: 12px;
+}
+
+.animated-button1:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button1:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button1:hover .text {
+  transform: translateX(12px);
+  color: white;
+}
+
+
+
+.animated-button1:hover svg {
+  fill: black;
+}
+
+.animated-button1:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px  #2980BE;
+}
+
+.animated-button1:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+
+.book {
+  position: relative;
+  left:310px;
+  border-radius: 10px;
+  width: 900px;
+  height: 700px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px  whitesmoke ;
+  box-shadow: 1px 1px 12px #188EBB;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: start;
+  color: black;
+}
+.descr{
+  padding-left: -20px;
+}
+.cover {
+  top: 0;
+  position: absolute;
+  background-color:whitesmoke ;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px rgb(176, 173, 173);
+  box-shadow: 1px 1px 12px #188EBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+.about {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  display: flex;
+}
+.imgabout{
+padding-top: 10px;
+height:400px;
+
+
+}
+
+.paragrapheabout
+{display: flex;
+flex-direction: column;}
+
+
+.card {
+  width: 190px;
+  height: 300px;
+  padding-left: 30px;
+  padding-top: 20px;
+  background: #188EBB;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.containerreclamation{
+  position: relative;
+  left:100px;
+  top:10px;
+}
+
+.containergaranties
+{ padding-top: 100px;
+  padding-left: 190px;
+  background-color: #F7F7F7;
+  height: 500px;
+}
+.reclam{
+  padding-right: 30px;
+}
+
+#imcontact
+{
+  position:relative;
+  bottom:25px;
+  right:10px;
+  height:140px;
+}
+#imserv{
+  position: relative;
+  right:20px;
+  top:30px;
+}
+#imtransporteur{
+  position: relative;
+  right:10px;
+  bottom:30px;
+  height:140px;
+
+}
+#imrepaired{
+  position: relative;
+  right:10px;
+  top:40px;
+}
+
+.card2 {
+  width: 190px;
+  height: 290px;
+  padding: .8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-right: 210px;
+  margin-left: 20px;
+ }
+ 
+ .card2-img {
+  height: 40%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .2s ease    ease-in-out, box-shadow 0.2s ease-in-out;;
+ }
+ .imboutique{
+  height: 90%;
+  width: 100%;
+ }
+ 
+ .card2-info {
+  padding-top: 10%;
+ }
+ 
+ svg {
+  width: 15px;
+  height: 15px;
+ }
+ 
+ .card2-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ position: relative;
+ bottom:20px;
+ padding-top: 5px;
+  border-top: 1px solid #ddd;
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+ }
+
+ .text-body {
+  font-size: .9em;
+  padding-bottom: 10px;
+ }
+ 
+ /*Button*/
+ .card2-button {
+  border: 2px solid #090808;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ /*Hover*/
+ .card2-img:hover {
+  transform: translateY(-50%) scale(1.1) ;
+  
+  
+  box-shadow: rgba(241, 238, 214, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+ }
+ 
+ .card2-button:hover {
+  border: 1px solid #2980BE ;
+  background-color: #2980BE;
+ }
+ .sm{
+  height:100px;
+  width:150px;
+  padding-left: 20px;
+ }
+ 
+.container_pourquoinous{
+background-color: #188EBB;
+height: 400px;
+position: relative;
+bottom:100px;
+
+padding-top: 100px;
+}
+ .card3 {
+  width: 220px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+  left:120px;
+  margin-right: 225px;
+  margin-left: 40px;
+}
+
+
+.card3-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card3:hover .card3-inner {
+  transform: rotateY(180deg);
+}
+
+.card3-front,
+.card3-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card3-front {
+  background-color: #FFFFFF;
+  color: black;
+  display: flex;
+  align-items: center;
+  border: 10px solid #FFFFFF;
+  border-radius: 150px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card3-back {
+  color: black;
+  display: flex;
+  align-items: center;
+  border: 10px solid #FFFFFF;
+  border-radius: 150px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  background-color: white;
+}
+
+.cloption1{
+  position: relative;
+  left:100px;
+}
+.cloption3{
+  position: relative;
+  right:100px;
+}
+.imgoption1{
+  width:90px;
+}
+.imgoption2{
+  width:110px;
+}
+.imgoption3{
+  width:110px;
+}
+.text
+{ display:flex;
+flex-direction:column;
+font-size: 15px;
+
+}
+
+.partenaires{
+  height: 50px; 
+  width: 1300px; 
+  background-color: #FFF;
+  border: 4px solid #00668C;
+  border-radius: 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left:120px;
+  display: flex;
+  flex-direction: row;
+  
+}
+.imass4{
+  position: relative;
+  left:600px;
+}
+.imass3{
+  position: relative;
+  left:400px;
+}
+.imass2{
+  position: relative;
+  left:200px;
+}
+.imass1{
+  position: relative;
+  left:50px;
+}
+
+#dv1{
+  width: 550px;
+  height: 60px;
+  display: flex;
+  margin-top: 50px;
+}
+#dv1>h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: normal;
+  display: flex;
+  text-align: center;
+  color: white;
+}
+#dv0{
+  display: flex;
+  justify-content: center;
+  background-color:#188EBB;
+  padding: 30px;
+}
+
+#dv2{
+  background-color:#188EBB;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+}
+
+#dv3{
+  margin-left: 420px;
+  padding: 40px;
+}
+
+#dv4{
+  width: 550px;
+  height: 60px;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+#dv3>details{
+     display: flex;
+     justify-content: start;
+     align-items: start;
+     text-align: start;
+}
+
+#p45{
+  display: flex;
+     justify-content: start;
+     align-items: start;
+     text-align: start;}
+
+     .card{
+      height: 300px;
+      background-color: #188EBB;
+    }

@@ -1,0 +1,61 @@
+#ftt{
+    display: flex;
+    justify-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#coon{
+    font-family: "Poppins", sans-serif; 
+    margin-top: -20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  
+  .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f8f9fa;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .btn-refund, .btn-reject {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif; 
+  }
+  
+  .btn-refund {
+    background-color: #28a745;
+    color: white;
+    margin-left : 500px;
+  }
+  
+  .btn-reject {
+    background-color: #dc3545;
+    color: white;
+    margin-right: 500px;
+  }

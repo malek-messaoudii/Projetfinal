@@ -187,10 +187,11 @@ const handleContractChange = (event) => {
     </div>
     <div id='sec4'>
       <section className="form-container" id='carer1'>
+      <div id='paraf' className='paraf'><p id='paraf'>NB: Veuillez imprimer la demande après avoir rempli le formulaire.</p> </div>
         <form className="custom-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="contract">Agence d'assurance :</label>  <br/>
-            <select id="contract" name="nomagenceassurance" value={formData.nomagenceassurance} onChange={handleChange} required>
+            <select id="contrat" name="nomagenceassurance" value={formData.nomagenceassurance} onChange={handleChange} required>
               <option value="">Sélectionnez le nom de votre agence d'assurance</option>
               <option value="Loyd">Loyd</option>
               <option value="MAE">MAE</option>
@@ -200,7 +201,7 @@ const handleContractChange = (event) => {
           </div>
           <div className="form-group">
             <label htmlFor="contract">Contrat :</label>  <br/>
-            <select id="contract" name="typecontrat" value={formData.typecontrat} onChange={handleContractChange} required>
+            <select id="contrat" name="typecontrat" value={formData.typecontrat} onChange={handleContractChange} required>
               <option value="">Sélectionnez un contrat</option>
               <option value="premium">Contrat Premium</option>
               <option value="normal">Contrat Normal</option>
@@ -240,15 +241,16 @@ const handleContractChange = (event) => {
           </div>
           <div className="form-group">
             <label htmlFor="endDate">Date de Fin :</label>
-            <input type="date" id="date" name="datefin" value={formData.datefin} onChange={handleChange} required />
+            <input type="date" id="date" name="datefin" value={formData.datefin} onChange={handleChange} required min={getCurrentDate()}/>
           </div>
-          <button className='bn632-hover bn26' id='bout' type="submit">Suivant</button>
+          <div id='dmd'>
+          <button className='bn632-hover bn26' id='bout' type="submit">Suivant</button> </div>
         </form>
         <br/>
         <br/>
       </section>
     </div>
-    <div className='print-btn'>
+    <div className='print-btn1'>
       <button className='bn632-hover bn26' type="button" onClick={handlePrint}>Imprimer</button>
     </div>
       

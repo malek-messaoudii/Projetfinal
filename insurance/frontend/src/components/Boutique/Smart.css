@@ -1,62 +1,75 @@
-.z5{
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.z5 {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .carree1 {
-    height: 740px;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(113, 196, 239, 0.5);
     border-radius: 30px;
-    background-color: rgba(113, 196, 239, 0.5);  
-    box-shadow: 0 6px 6px rgba(0,102,140, .8);
-    margin-top: 80px;
+    box-shadow: 0 6px 6px rgba(0,102,140, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .tag {
     margin-top: -20px;
 }
 
-.z3{
-    margin-top: 0px;
+.z3 {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
-
 
 .z6 {
     height: 330px;
     color: white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.formgroup{
-    width: 300px;
-    margin-top: 70px;
-    margin-left: 10px;
-}
-.inp {
-    margin-top: 10px;
-}
-
-#z9{
+.formgroup {
+    width: 100%;
     padding: 20px;
-    
 }
 
-.z9{
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
+
+
+.z9 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
 }
 
-.bt111{
+.bt111 {
     display: flex;
     justify-content: center;
-    margin-top: 2px;
-    position: relative;
-   right: 10px;
+    margin-top: 20px;
 }
 
-#bout{
+#bout {
     width: 120px;
     text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.lbl {
+    margin-right: 180px
+}
+
+#numeroSerie{
+    width: 250px;
 }

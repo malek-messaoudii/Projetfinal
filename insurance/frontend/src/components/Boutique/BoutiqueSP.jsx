@@ -13,6 +13,8 @@ import Footer from '../Footer/Footer';
 import SearchIcon from '@mui/icons-material/Search';
 import CustomNavbar from '../Navbar1';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
 
 function BoutiqueSP() {
   const history = useHistory();
@@ -28,17 +30,23 @@ function BoutiqueSP() {
       <span className="message">Contactez l'agent d'entreprise d'assurance  </span>
       <IconButton href='/Chat'><div className="circle"> <ChatBubbleIcon/> </div></IconButton>
     </div>
+
       <div className='header'>
         <div className='header__input'>
                  <SearchIcon />
                 <input type='text' placeholder='Rechercher votre produit' id='i1'/>
-            </div> </div> 
+            </div>
+            <div id='m5'>
+          <a href='/Boutique' id='a5'>
+            <div className='m4' id='a4'><ArrowBackIcon /></div>
+          </a>
+        </div> </div> 
         <div id='b11'>
           <div id='carreau3'>
             <div id='care1'>
               <h4> Iphone </h4>
               <div className='image1'>
-                <img alt="" src={iphone12} width="120" height="175" />
+                <img alt="" src={iphone12} width="175" height="175" />
               </div>
               <p className='p11'> <b> Passez une assurance pour <br /> votre smartphone </b></p>
               <div className='boutton'> 

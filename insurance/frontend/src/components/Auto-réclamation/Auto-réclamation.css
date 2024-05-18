@@ -72,3 +72,81 @@ ArrowForwardIcon {
     margin-bottom: 40px;
 
 }
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Style global pour les conteneurs de réclamation */
+.claim-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 4px rgba(26, 134, 189, 0.6);
+  }
+  
+  .claim-container h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Style pour les étiquettes */
+  .claim-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  /* Style pour les champs d'entrée */
+  .claim-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Style par défaut pour les boutons */
+  .claim-container button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style pour le bouton "Ajouter une réclamation" */
+  .claim-container button.claim-details:first-child {
+    background-color: #008CBA; /* Blue */
+  }
+  
+  /* Style pour le bouton "Consulter une réclamation" */
+  .claim-container button.claim-details:last-child {
+    background-color: #f44336; /* Red */
+  }
+  
+  /* Style pour les boutons lorsqu'ils sont survolés */
+  .claim-container button:hover {
+    opacity: 0.8;
+  }
+  
+
+  .rr{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+
+  .claim-details{
+    width: 400px;
+  }

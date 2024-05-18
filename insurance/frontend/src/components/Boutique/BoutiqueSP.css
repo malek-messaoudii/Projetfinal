@@ -63,3 +63,7 @@
 #p11{
     margin-top: -30px;
 }
+
+.header__input{
+    border: 1px solid;
+}

@@ -13,7 +13,7 @@ const formatDate = (dateString) => {
   return dateString.split('T')[0];
 };
 function Compte() {
-  const [columns, setColumns] = useState(['N°contrat assurance', "Date d'effet", "Date d'échéance", "N°Série_Produit", "Etat du Demande d'assurance"]);
+  const [columns, setColumns] = useState(['N°contrat assurance', "Date d'effet", "Date d'échéance", "N°Série_Produit", "ModeleProduit","Etat du Demande d'assurance"]);
   const [records, setRecords] = useState([]);
  
   useEffect(() => {
@@ -98,7 +98,8 @@ function Compte() {
                   <td id="datefin">{formatDate(records.datefin)}</td>
         
                   <td id="numse">{records.numserieproduit}</td>
-                  <td id="dem">{records.etattraitement ? 'traite' : 'non traite'}</td>
+                  <td id="numse">{records.modeleProduit}</td>
+                  <td id="dem">{records.etattraitement}</td>
                 </tr>
               ))
             )}

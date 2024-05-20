@@ -10,11 +10,11 @@ import { IconButton } from '@mui/material';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useLocation } from 'react-router-dom';
+import { useLocation,useHistory } from 'react-router-dom';
 const backendURL = 'http://localhost:4000/demandeassurance';
 
 function Demandassurance() {
-
+  const history = useHistory();
   const getCurrentDate = () => {
     const today = new Date();
     const year = today.getFullYear();
@@ -35,8 +35,8 @@ function Demandassurance() {
     return diffDays;
   };
   const location = useLocation();
-  const numeroSerie = location.state;
-  const numeroSerieValue = numeroSerie.state ? numeroSerie.state.numeroSerie : '';
+  const {numeroSerie,model} = location.state || {};;
+ // const numeroSerieValue = numeroSerie.state ? numeroSerie.state.numeroSerie : '';
 
 console.log("numeroSerie:", numeroSerie);
   const [formData, setFormData] = useState({
@@ -50,7 +50,8 @@ console.log("numeroSerie:", numeroSerie);
     email:'',
     datedebut:'',
     datefin:'',
-    numserieproduit: numeroSerieValue
+    numserieproduit: numeroSerie,
+    modele:model
   });
 
   const [pricePerDay, setPricePerDay] = useState('');
@@ -78,9 +79,10 @@ useEffect(() => {
 useEffect(() => {
   setFormData(prevState => ({
     ...prevState,
-    numserieproduit: numeroSerieValue || ''
+    numserieproduit: numeroSerie || '',
+    modeleProduit:model
   }));
-}, [numeroSerieValue]);
+}, [numeroSerie]);
 
 useEffect(() => {
   const totalDays = calculateDays(formData.datedebut, formData.datefin);
@@ -120,7 +122,9 @@ const handleSubmit = async (event) => {
       try {
         const response = await axios.post(`${backendURL}/adddemandeassurance`, formData);
         if (response.status === 200) {
-          Swal.fire("Demande d'assurance envoyée avec succès!");
+          const prixAss=formData.prix;
+          const nomagence=formData.nomagenceassurance;
+          history.push('/Paiement', { numeroSerie ,model,prixAss ,nomagence});
         } 
       } catch (error) {
         if (error.response) {
@@ -176,6 +180,10 @@ const handleContractChange = (event) => {
       <IconButton href='/Chat'><div className="circle"> <ChatBubbleIcon/> </div></IconButton>
     </div>
     <div>
+    <div>
+      <p>Numero Serie: {numeroSerie}</p>
+      <p>Modele: {model}</p>
+    </div>
       <h2 id='titre'>Demande d'assurance</h2>
       <div id='m5'>  
         <a href='/Smart' id='a5'> 

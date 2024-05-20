@@ -61,7 +61,7 @@ function Compte() {
       ville: '',
       cin: ''
     });
-   
+    localStorage.clear();
     toast.success("Session terminée");
     window.location.href = '/Login';
   };

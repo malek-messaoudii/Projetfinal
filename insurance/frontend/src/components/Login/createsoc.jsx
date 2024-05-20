@@ -32,7 +32,7 @@ const RadioButton = () => {
 
     const [noms, setNoms] = useState('');
     const [id, setID] = useState('');
-    const [numérotel, setNumérotel] = useState('');
+    const [numerotel, setNumerotel] = useState('');
     const [email, setEmail] = useState('');
     const [nomg, setNomg] = useState('');
     const [role, setRole] = useState('');
@@ -44,19 +44,19 @@ const RadioButton = () => {
         e.preventDefault();
         try {
           const checkUnique = await axios.post(`${backendURL}/checkUnique2`, {
-            id: id,
+           
             email: email,
-            numérotel: numérotel,
+            numerotel: numerotel,
           });
     
           if (!checkUnique.data.unique) {
-            toast.error('Email, numéro de téléphone ou ID déjà utilisé.');
+            toast.error('Email, numéro de téléphone déjà utilisé.');
             return;
           }
             const userData = {
                 noms: noms,
                 id: id,
-                numérotel: numérotel,
+                numerotel: numerotel,
                 email: email,
                 nomg: nomg,
                 role: role,
@@ -81,7 +81,7 @@ const RadioButton = () => {
   
             setNoms('');
             setID('');
-            setNumérotel('');
+            setNumerotel('');
             setEmail('');
             setNomg('');
             setRole('');
@@ -150,7 +150,7 @@ const RadioButton = () => {
     <div className='d1' >
     <div class="form-group">
       <label for="tel">Numéro de téléphone : *</label>
-      <input type="tel" id="email1" name="tel" required placeholder='Enter votre numéro de téléphone'onChange={(e)=> setNumérotel(e.target.value)}/>
+      <input type="tel" id="email1" name="tel" required placeholder='Enter votre numéro de téléphone'onChange={(e)=> setNumerotel(e.target.value)}/>
     </div>
     <div class="form-group">
       <label for="email">Adresse email : * </label>

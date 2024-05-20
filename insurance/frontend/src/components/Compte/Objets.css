@@ -5,7 +5,7 @@
 }
   
 table {
-	width: 850px;
+	width: 950px;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow:  #cff0ff 0px 10px 10px -5px;
@@ -20,7 +20,8 @@ td {
 	color: black;
 }
 #datedebut{
-    width:160px
+    width:190px
+   
 }
 #datefin{
     width:170px

@@ -25,6 +25,7 @@ function Login() {
     const [email, setEmail] = useState('');
     const [mdp, setPassword] = useState('');
     const [user, dispatch] = useStateValue();
+    const [nomagence, setNomagence] = useState('');
     const [userRole, setUserRole] = useState(null); // State to store user role
 
     useEffect(() => {
@@ -88,10 +89,18 @@ function Login() {
                 });
                 const userData = await user.json();
                 console.log("User data:", userData); // Log the userData to see its structure
+                
                 const userRole = userData.role; // Accessing user role from parsed response
                 console.log("User role:", userRole); 
                 setUserRole(userRole); 
                 localStorage.setItem('userRole', userRole); 
+                if (userRole!=='Client')
+                 {   const nomagence = userData.noms; 
+                console.log("Nom agence:", nomagence); 
+                setNomagence(nomagence); 
+                localStorage.setItem('nomagence',nomagence ); 
+                }
+             
                 switch (userRole) {
                     case 'agentassurance':
                         history.push('/Home4');

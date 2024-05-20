@@ -31,7 +31,7 @@ function CustomNavbar({ userRole }) {
             <Nav.Link className="menu-link" href="/Contact4">Contact</Nav.Link>
           </Nav>
           <div className='header-right'>
-              <IconButton href="/Compte3">
+              <IconButton href="/Compte2">
               <Avatar/>
               </IconButton>
             </div>

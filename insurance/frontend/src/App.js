@@ -55,6 +55,8 @@ import Rep3 from './components/Réparation/Rep3';
 import Assur3 from './components/Réclamation/Assur3';
 import Contact1 from './components/Contact/Contact1';
 import Compte5 from './components/Compte/Compte5';
+import Compte2 from './components/Compte/Compte2';
+import Compte2demandess from './components/Compte/demandeassCompte2';
 import Claim from './components/Police/Claim';
 import Boutiqueor from './components/Boutique/Boutiqueor';
 import Repair from './components/Réparation/Repair';
@@ -125,6 +127,9 @@ class App extends Component {
             <Route path="/Boutiqueor" component={Boutiqueor} />
             <Route path="/repair/:claimId" component={Repair} />
             <Route path="/Gestion" component={Gestion} />
+            <Route path="/Compte2" component={Compte2} />
+            <Route path="/Compte2DemandeAss" component={ Compte2demandess} />
+           
           </Switch>
         </div>
       </Router>

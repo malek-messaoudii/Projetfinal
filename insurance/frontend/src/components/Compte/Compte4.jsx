@@ -16,7 +16,7 @@ function Compte() {
   const [userData, setUserData] = useState({
     noms: '',
     nomg: '',
-    numérotel: '',
+    numerotel: '',
     email: '',
     id: ''
   });
@@ -49,7 +49,7 @@ function Compte() {
     setUserData({
         noms: '',
         nomg: '',
-        numérotel: '',
+        numerotel: '',
         email: '',
         id: ''
     });

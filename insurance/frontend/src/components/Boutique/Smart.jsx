@@ -44,7 +44,7 @@ function Smart() {
     setNumeroSerie(event.target.value);
   };
 
-  const handleNextClick = (event) => {
+  const handleNextClick = (event,record) => {
     event.preventDefault();
     if (numeroSerie.trim() === '') {
       Swal.fire({
@@ -52,8 +52,8 @@ function Smart() {
         title: "Oops...",
         text: "Vous devez entrer le numéro de série du produit que vous voulez assurer",
       });
-    } else {
-      history.push('/Demande', { state: { numeroSerie } });
+    } else { const model=record.modele
+      history.push('/Demande', {   numeroSerie ,model });
     }
   };
 
@@ -100,7 +100,7 @@ function Smart() {
                     </div>
                   </div>
                   <div className='bt111'>
-                    <button className='bn632-hover bn26' id='bout' type="submit" onClick={handleNextClick}>Suivant</button>
+                    <button className='bn632-hover bn26' id='bout' type="submit" onClick={(event) => handleNextClick(event, record)}>Suivant</button>
                   </div>
                 </Carousel.Item>
               ))}
